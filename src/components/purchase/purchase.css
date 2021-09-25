@@ -1,0 +1,115 @@
+.purchase header {
+    color: var(--walter-white);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.purchase {
+    text-align: center;
+    color: var(--walter-white);
+    padding-bottom: 100px;
+}
+
+.purchase .product {
+    background-color: var(--brand-two);
+    padding: 14px;
+    border-radius: var(--br);
+    margin-top: 20px;
+    box-shadow: 0 0 5px var(--brand-two);
+    background: rgb(24,22,30);
+    background: linear-gradient(0deg, rgba(24,22,30,1) 0%, rgba(40,40,48,1) 100%);
+}
+
+.purchase .product-image {
+    width: 200px;
+    z-index: 999;
+}
+
+.purchase h2 {
+    text-align: left;
+    font-weight: 800;
+}
+
+.purchase .description {
+    text-align: left;
+    color: var(--on-dark);
+    margin: 14px 0;
+}
+
+.purchase footer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.purchase footer button {
+    transition: 0.2s;
+    background-color: var(--brand-orange);
+    color: var(--walter-white);
+    border: none;
+    border-radius: var(--br);
+    font-weight: 700;
+    padding: 10px 24px;
+}
+
+.purchase footer button:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+    /* padding: 10px 30px; */
+}
+
+.purchase .owner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: auto;
+}
+
+.purchase .owner img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.btn-area p {
+    margin-top: 8px;
+}
+
+.is-buying {
+    text-align: left;
+    margin-top: 20px;
+    border-top: 4px solid var(--brand-orange);
+    padding-top: 12px;
+    border-top-left-radius: var(--br);
+    border-top-right-radius: var(--br);
+}
+
+.is-buying .t {
+    font-weight: 800;
+    color: var(--walter-white);
+}
+
+.is-buying .s {
+    font-weight: 400;
+    color: var(--on-dark);
+    margin-top: 6px;
+}
+
+.is-buying input {
+    border-radius: var(--br);
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: none;
+    padding: 20px;
+    background-color: var(--brand-two);
+    color: var(--on-dark);
+}
+
+.is-buying input:focus {
+    outline-color: var(--on-dark);
+}

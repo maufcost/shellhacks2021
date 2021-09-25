@@ -10,6 +10,13 @@
     /* General */
     --walter-white: #ffffff;
 
+    /* Neon */
+    --green: #29b33b;
+    --green-shadow: #51e064;
+    --blue: #3887d6;
+    --blue-shadow: #66a7e8;
+    --orange-shadow: #f2aa6f;
+
     /* For inputs, buttons, textareas, and general divs */
     --br: 8px;
 }
@@ -43,4 +50,60 @@ input, button, textarea {
 
 .gimme-border {
     border-bottom: 2px solid var(--brand-orange);
+}
+
+.neon-green {
+    display: block;
+    background-color: var(--green);
+    box-shadow: 0 0 14px var(--green-shadow);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.neon-orange {
+    display: block;
+    background-color: var(--brand-orange);
+    box-shadow: 0 0 14px var(--orange-shadow);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.neon-blue {
+    display: block;
+    background-color: var(--blue);
+    box-shadow: 0 0 14px var(--blue-shadow);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.animate {
+    animation: fade 0.5s linear 0.5s infinite alternate;
+}
+
+.rotate {
+    animation: rotate 1s linear 1s infinite alternate;
+
+}
+
+@keyframes fade {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+      opacity: 1;
+      transform: rotate(0);
+  }
+  to {
+      opacity: 0;
+      transform: rotate(360deg);
+  }
 }

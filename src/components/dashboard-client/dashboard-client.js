@@ -1,10 +1,8 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import { SAMPLE_USER } from '../../utils'
 
+import Header from '../header/header'
 import Business from '../business/business'
-
-import HB from '../../global-assets/hb.svg'
 
 import '../../dashboard.css'
 
@@ -79,16 +77,7 @@ class DashboardClient extends React.Component {
         return (
             <div className="dashboard-client-container">
                 <div className="dashboard auto">
-                    <div className="nav">
-                        <img
-                            className="hamburguer"
-                            src={HB}
-                            alt="Menu"
-                            onClick={this.props.openCloseMenu}
-                        />
-                        <p>logo</p>
-                        <img className="user-img" src={SAMPLE_USER} />
-                    </div>
+                    <Header openCloseMenu={this.props.openCloseMenu} />
                     <header>
                         <h1>The best combination: <span className="gimme-border">local business shopping</span> and <span className="gimme-border">crypto</span></h1>
                         <input
@@ -99,7 +88,10 @@ class DashboardClient extends React.Component {
                             onChange={this.onChangeSearch}
                         />
                     </header>
-                    <h2 className="subtitle">Browse local businesses</h2>
+                    <h2 className="subtitle">
+                        <div className="neon-orange animate"></div>
+                        Browse local businesses
+                    </h2>
                     <div className="businesses">
                         {businessList}
                     </div>

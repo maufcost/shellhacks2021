@@ -1,27 +1,3 @@
-.dashboard .nav {
-    position: relative;
-    margin-top: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.dashboard .hamburguer {
-    width: 30px;
-    transition: 0.4s;
-}
-
-.dashboard .hamburguer:hover {
-    opacity: 0.8;
-    transition: 0.4s;
-}
-
-.dashboard .user-img {
-    border-radius: 50%;
-    width: 34px;
-}
-
 .dashboard header {
     margin: 20px 0;
 }
@@ -53,6 +29,9 @@
     font-size: 0.9em;
     margin-bottom: 20px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .dashboard .businesses {
