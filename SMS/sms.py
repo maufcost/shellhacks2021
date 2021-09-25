@@ -60,9 +60,9 @@ def portfolioAlert(coin, val, delta, time, number, threshold = .05): # delta is 
 	m = ""
 	if abs(delta) >= threshold:
 		if delta < 0:
-			m = f"📉 {coin} is down {delta*100: .2f}% is the last {convertSecs(time)} !📉"
+			m = f"📉 {coin} is down {delta*100:.2f}% is the last {convertSecs(time)} !📉"
 		else:
-			m = f"📈 {coin} is up {delta*100: .2f}% is the last {convertSecs(time)} !📈"
+			m = f"📈 {coin} is up {delta*100:.2f}% is the last {convertSecs(time)} !📈"
 
 	sendMessage(m, number)
 
