@@ -1,0 +1,64 @@
+.business-container {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(24,22,30);
+    background: linear-gradient(0deg, rgba(24,22,30,1) 0%, rgba(40,40,48,1) 100%);
+    height: 200px;
+    box-shadow: 0 0 10px var(--brand-one);
+}
+
+.business {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+.business .hug {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--br);
+}
+
+.business .hug img {
+    width: 100%;
+    height: auto;
+}
+
+.business .name {
+    color: var(--walter-white);
+    font-weight: 800;
+}
+
+.business footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    width: 100%;
+}
+
+.business footer p {
+    color: var(--brand-orange);
+    font-weight: 700;
+}
+
+.business footer button {
+    transition: 0.2s;
+    background-color: var(--brand-orange);
+    border-radius: var(--br);
+    border: none;
+    padding: 5px 8px;
+    font-weight: 700;
+    color: var(--walter-white);
+}
+
+.business footer button:hover {
+    transition: 0.2s;
+    opacity: 0.6;
+}

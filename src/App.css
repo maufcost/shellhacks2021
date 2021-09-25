@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Brand */
+    --brand-one: #18161e;
+    --brand-two: #282830;
+    --brand-orange: #e58333;
+    --on-dark: #cbc9d3;
+
+    /* General */
+    --walter-white: #ffffff;
+
+    /* For inputs, buttons, textareas, and general divs */
+    --br: 8px;
+}
+
+html, body, .App {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--brand-one);
+}
+
+.App {
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul {
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea {
+    font-family: 'Raleway', sans-serif;
+}
+
+.auto {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.gimme-border {
+    border-bottom: 2px solid var(--brand-orange);
+}

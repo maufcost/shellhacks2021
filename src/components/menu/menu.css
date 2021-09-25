@@ -1,0 +1,16 @@
+.menu-container {
+    position: absolute;
+    background-color: cornflowerblue;
+    width: 90vw;
+    height: 95vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--br);
+    box-shadow: 0 0 20px var(--brand-one);
+    z-index: 999;
+}
+
+.menu {
+}

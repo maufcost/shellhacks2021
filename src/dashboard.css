@@ -1,0 +1,62 @@
+.dashboard .nav {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard .hamburguer {
+    width: 30px;
+    transition: 0.4s;
+}
+
+.dashboard .hamburguer:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.dashboard .user-img {
+    border-radius: 50%;
+    width: 34px;
+}
+
+.dashboard header {
+    margin: 20px 0;
+}
+
+.dashboard header h1 {
+    color: var(--walter-white);
+    font-weight: 800;
+    width: 80%;
+}
+
+.dashboard header input {
+    border-radius: var(--br);
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: none;
+    padding: 20px;
+    background-color: var(--brand-two);
+    color: var(--on-dark);
+}
+
+.dashboard header input:focus {
+    outline-color: var(--on-dark);
+}
+
+.dashboard .subtitle {
+    color: var(--brand-orange);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.dashboard .businesses {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
