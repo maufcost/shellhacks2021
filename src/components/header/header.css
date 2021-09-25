@@ -1,0 +1,23 @@
+.app-header {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-header .hamburguer {
+    width: 30px;
+    transition: 0.4s;
+}
+
+.app-header .hamburguer:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.app-header .user-img {
+    border-radius: 50%;
+    width: 34px;
+}

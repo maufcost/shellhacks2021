@@ -1,0 +1,144 @@
+.my-tradings-container {
+    margin-bottom: 200px;
+}
+
+.my-tradings .revenue-today {
+    margin-top: 12px;
+    color: var(--walter-white);
+}
+
+.revenue-today .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.revenue-today .revenue {
+    font-weight: 800;
+    font-size: 3em;
+    display: inline-block;
+}
+
+.revenue-today .slider-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.slider-area p {
+    min-width: 40px;
+}
+
+.my-tradings .top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.my-tradings .title {
+    color: var(--walter-white);
+    font-weight: 800;
+}
+
+.my-tradings .subtitle {
+    color: var(--on-dark);
+    margin-top: 12px;
+}
+
+.my-tradings .graph {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.my-tradings .pick {
+    margin-top: 20px;
+}
+
+.my-tradings .pick-title {
+    color: var(--walter-white);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.transactions {
+    position: relative;
+}
+
+.transactions-header {
+    color: var(--on-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.transactions-header .b,
+.transactions-header .s {
+    margin-left: 25px;
+}
+
+.list .transaction {
+    color: var(--walter-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.list .transaction img {
+    width: 20px;
+    height: 20px;
+}
+
+.list .transaction p {
+    background-color: var(--brand-two);
+    border-radius: var(--br);
+    padding: 2px 5px;
+    font-weight: 800;
+}
+
+.list .transaction p.inv {
+    color: var(--green);
+}
+
+.bots {
+    overflow-x: auto;
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.bots .bot .bot-name {
+    color: var(--walter-white);
+    font-weight: 800;
+}
+
+.bots .bot .bot-desc {
+    color: var(--on-dark);
+    margin-bottom: 12px;
+}
+
+.bots .bot img {
+    width: 200px;
+}
+
+.bots .bot button {
+    transition: 0.2s;
+    width: 100%;
+    background-color: var(--brand-orange);
+    color: var(--walter-white);
+    font-weight: 800;
+    border: none;
+    border-radius: var(--br);
+    padding: 8px 0;
+}
+
+.bots .bot button:hover {
+    transition: 0.2s;
+    opacity: 0.8;
+}

@@ -2,9 +2,10 @@ import React from 'react'
 import { Router } from '@reach/router'
 
 import Menu from './components/menu/menu'
+import Purchase from './components/purchase/purchase'
 import Register from './components/register/register'
+import MyTradings from './components/my-tradings/my-tradings'
 import DashboardClient from './components/dashboard-client/dashboard-client'
-import DashboardBusiness from './components/dashboard-business/dashboard-business'
 
 import './App.css'
 
@@ -34,13 +35,19 @@ class App extends React.Component {
                 <Router>
                     <Register
                         path="/register"
+                        openCloseMenu={this.openCloseMenu}
                     />
                     <DashboardClient
                         path="/home-client"
                         openCloseMenu={this.openCloseMenu}
                     />
-                    <DashboardBusiness
-                        path="/home-business"
+                    <Purchase
+                        path="/purchase"
+                        openCloseMenu={this.openCloseMenu}
+                    />
+                    <MyTradings
+                        path="/my-tradings"
+                        openCloseMenu={this.openCloseMenu}
                     />
                 </Router>
             </div>

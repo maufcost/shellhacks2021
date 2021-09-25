@@ -1,0 +1,68 @@
+.register h1 {
+    font-size: 2.3em;
+    color: var(--walter-white);
+    font-weight: 750;
+    margin-top: 30px;
+}
+
+.register .s {
+    color: var(--on-dark);
+    margin-bottom: 25px;
+}
+
+.register label {
+    color: var(--walter-white);
+    font-weight: 700;
+}
+
+.register input {
+    border-radius: var(--br);
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 20px;
+    background-color: var(--brand-two);
+    color: var(--on-dark);
+}
+
+.register input:focus {
+    outline-color: var(--on-dark);
+}
+
+.register .divider {
+    margin-bottom: 25px;
+}
+
+.register .divider p {
+    color: var(--brand-orange);
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.register button {
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: var(--br);
+    padding: 15px;
+    background-color: var(--brand-orange);
+    color: var(--walter-white);
+    font-weight: 800;
+}
+
+.register .option {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.register .option input {
+    width: 20px;
+}
+
+.register .option span {
+    color: var(--walter-white);
+}

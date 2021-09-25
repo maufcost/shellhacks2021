@@ -1,10 +1,11 @@
 import React from 'react'
+import { navigate } from '@reach/router'
 
 import './business.css'
 
 class Business extends React.Component {
     go() {
-
+        navigate('/purchase')
     }
 
     render() {
