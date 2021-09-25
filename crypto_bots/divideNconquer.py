@@ -1,7 +1,7 @@
 import requests
 import math
 
-API_KEY = "redacted_for_now"
+API_KEY = "redacted"
 
 def get_last_7_days(coin):
     url = "https://min-api.cryptocompare.com/data/v2/histoday?fsym={}&tsym=USD&limit=7&api_key={}".format(coin, API_KEY)
@@ -80,8 +80,20 @@ def start_bot_analysis(coin, investment):
     print("Based on our 7-day analysis, we've compiled this transaction list:")
     return transactions
 
-
+print("+++++++++++++++++++++++++++++++++++++")
 print(start_bot_analysis("ETH", 5000))
+print("+++++++++++++++++++++++++++++++++++++")
+
+# print(start_bot_analysis("MIA", 5000))
+# print("+++++++++++++++++++++++++++++++++++++")
+#
+# print(start_bot_analysis("BTC", 5000))
+# print("+++++++++++++++++++++++++++++++++++++")
+# print(start_bot_analysis("ATOM", 5000))
+# print("+++++++++++++++++++++++++++++++++++++")
+
+
+
 #start_bot_analysis("ETH")
 
 # 7 day low: 2677.64, high: 3541.73, diff: 864.09, % 32.27
