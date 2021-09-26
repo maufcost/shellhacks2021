@@ -24,11 +24,9 @@ class Header extends React.Component {
                     alt="Menu"
                     onClick={this.redirect}
                 />
-                <p>logo</p>
-                {!this.props.noImg ? (
+                <p className="logo">bizchain</p>
+                {!this.props.noImg && (
                     <img className="user-img" src={SAMPLE_USER} />
-                ) : (
-                    <p></p>
                 )}
             </div>
         )

@@ -76,7 +76,7 @@ class Menu extends React.Component {
                         >
                             x
                         </button>
-                        <p className="logo">Logo</p>
+                        <p className="logo">bizchain</p>
                     </header>
                     <div className="nav">
                         <button onClick={this.browseLocalBusinesses}>

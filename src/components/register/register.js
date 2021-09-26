@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from '@reach/router'
 import Header from '../header/header'
 
 import './register.css'
@@ -10,23 +11,32 @@ class Register extends React.Component {
         this.state = {
             email: '',
             pwd: '',
-            cpwd: ''
+            cpwd: '',
+            loading: false
         }
 
         this.register = this.register.bind(this)
     }
 
     register() {
+        this.setState({ loading: true })
+        setTimeout(() => {
+            // for clients:
+            // navigate('/home-client')
 
+            // for register:
+            navigate('/my-tradings')
+        }, 3000)
     }
 
     render() {
         return (
             <div className="register-container">
+                {this.state.loading && <div className="loading"><span>⌛</span> Loading...</div>}
                 <div className="register auto">
                     <Header openCloseMenu={this.props.openCloseMenu} noImg />
 
-                    <h1>Welcome to XX!</h1>
+                    <h1>Welcome to Bizchain!</h1>
                     <p className="s">Let's create an account for you 😊</p>
 
                     <div className="divider">

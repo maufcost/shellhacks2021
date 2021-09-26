@@ -1,4 +1,6 @@
 import React from 'react'
+import { navigate } from '@reach/router'
+
 import Header from '../header/header'
 
 import HBPNG from '../../global-assets/hb_png.png'
@@ -12,19 +14,30 @@ class Purchase extends React.Component {
 
         this.state = {
             isBuying: false,
-            addr: ''
+            addr: '',
+            loading: false
         }
 
         this.buying = this.buying.bind(this)
+        this.processPurchase = this.processPurchase.bind(this)
     }
 
     buying() {
         this.setState({ isBuying: !this.state.isBuying });
     }
 
+    processPurchase() {
+        window.scrollTo(0, 0);
+        this.setState({ loading: true })
+        setTimeout(() => {
+            navigate('/success')
+        }, 4500)
+    }
+
     render() {
         return (
             <div className="purchase-container">
+                {this.state.loading && <div className="loading"><span>⌛</span> Loading...</div>}
                 <div className="purchase auto">
                     <Header openCloseMenu={this.props.openCloseMenu} />
                     <header>
@@ -58,12 +71,15 @@ class Purchase extends React.Component {
                             <div className="is-buying">
                                 <p className="t">Hello <span className="rotate">👋</span> Let me help you. What's your wallet address?</p>
                                 <p className="s">We will process your order shortly</p>
-                                <input
-                                    type="text"
-                                    value={this.state.addr}
-                                    placeholder="E.g. 2713ybsF1ibs9127bXS"
-                                    onChange={(e) => this.setState({ addr: e.target.value })}
-                                />
+                                <div className="form">
+                                    <input
+                                        type="text"
+                                        value={this.state.addr}
+                                        placeholder="E.g. 2713ybsF1ibs9127bXS"
+                                        onChange={(e) => this.setState({ addr: e.target.value })}
+                                    />
+                                    <button onClick={this.processPurchase}>Buy</button>
+                                </div>
                             </div>
                         )}
                     </div>

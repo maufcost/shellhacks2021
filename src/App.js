@@ -2,6 +2,7 @@ import React from 'react'
 import { Router } from '@reach/router'
 
 import Menu from './components/menu/menu'
+import Success from './components/success/success'
 import Purchase from './components/purchase/purchase'
 import Register from './components/register/register'
 import MyTradings from './components/my-tradings/my-tradings'
@@ -47,6 +48,10 @@ class App extends React.Component {
                     />
                     <MyTradings
                         path="/my-tradings"
+                        openCloseMenu={this.openCloseMenu}
+                    />
+                    <Success
+                        path="/success"
                         openCloseMenu={this.openCloseMenu}
                     />
                 </Router>

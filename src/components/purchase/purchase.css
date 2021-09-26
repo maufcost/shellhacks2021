@@ -1,3 +1,7 @@
+.purchase-container {
+    position: relative;
+}
+
 .purchase header {
     color: var(--walter-white);
     font-weight: 800;
@@ -103,7 +107,6 @@
     height: 30px;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 20px;
     border: none;
     padding: 20px;
     background-color: var(--brand-two);
@@ -112,4 +115,26 @@
 
 .is-buying input:focus {
     outline-color: var(--on-dark);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.form button {
+    height: 100%;
+    transition: 0.2s;
+    background-color: var(--brand-orange);
+    color: var(--walter-white);
+    border: none;
+    border-radius: var(--br);
+    font-weight: 700;
+    padding: 10px 24px;
+}
+
+.form button:hover {
+    opacity: 0.8;
 }
