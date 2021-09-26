@@ -20,13 +20,7 @@ class Register extends React.Component {
 
     register() {
         this.setState({ loading: true })
-        setTimeout(() => {
-            // for clients:
-            // navigate('/home-client')
-
-            // for register:
-            navigate('/my-tradings')
-        }, 3000)
+        firebase_magic()
     }
 
     render() {
