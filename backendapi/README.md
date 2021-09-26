@@ -59,24 +59,6 @@ Docs for API endpoints
             "investment": 24.75,
             "sell": 2409.22
         },
-        {
-            "buy": 2409.22,
-            "coin": "ETH",
-            "investment": 24.5,
-            "sell": 2425.5
-        },
-        {
-            "buy": 2425.5,
-            "coin": "ETH",
-            "investment": 24.26,
-            "sell": 2441.77
-        },
-        {
-            "buy": 2441.77,
-            "coin": "ETH",
-            "investment": 24.01,
-            "sell": 2458.05
-        },
         ...
         ...
         ...
