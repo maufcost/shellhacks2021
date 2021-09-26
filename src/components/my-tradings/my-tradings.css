@@ -1,5 +1,6 @@
 .my-tradings-container {
     margin-bottom: 200px;
+    position: relative;
 }
 
 .my-tradings .revenue-today {
@@ -80,6 +81,11 @@
 .transactions-header .b,
 .transactions-header .s {
     margin-left: 25px;
+}
+
+.list {
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .list .transaction {

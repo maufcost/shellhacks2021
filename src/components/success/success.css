@@ -1,0 +1,30 @@
+.success {
+    text-align: center;
+}
+
+.success h1 {
+    font-weight: 800;
+    color: var(--walter-white);
+    margin-top: 60px;
+}
+
+.success .s {
+    color: var(--on-dark);
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
+.success .owner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 760;
+    margin-top: 25px;
+    color: var(--walter-white);
+}
+
+.success .owner img {
+    border-radius: 50%;
+    width: 40px;
+}
