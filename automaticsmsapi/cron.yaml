@@ -1,0 +1,7 @@
+cron:
+- description: "Crypto 20 minute Update"
+  url: /sendsmstoall
+  schedule: every 20 minutes
+- description: "Crypto 10 minute threshold update"
+  url: /pricetrack
+  schedule: every 10 minutes

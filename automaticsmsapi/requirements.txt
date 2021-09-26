@@ -1,0 +1,17 @@
+Flask==1.1.2
+requests==2.24.0
+Jinja2>=2.9.5
+MarkupSafe==0.23
+Werkzeug>=0.14
+click==6.7
+itsdangerous==0.24
+wsgiref==0.1.2 ; python_version < '3.2'
+flask_cors==3.0.10
+google-api-core==1.26.3
+google-cloud==0.34.0
+google-cloud-automl==1.0.1
+google-auth==1.28.0
+grpcio==1.36.1
+firebase_admin==5.0.3
+trycourier==2.0.0
+twilio==6.35.5
